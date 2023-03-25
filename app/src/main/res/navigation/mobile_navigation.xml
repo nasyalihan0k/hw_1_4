@@ -29,9 +29,14 @@
         tools:layout="@layout/fragment_task" />
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.geektech.hw_1_4.FirstFragment"
+        android:name="com.geektech.hw_1_4.ProfileFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first" />
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/onBordFragment"
+        android:name="com.geektech.hw_1_4.ui.onbording.OnBordFragment"
+        android:label="fragment_on_bord"
+        tools:layout="@layout/fragment_on_bord" />
 
 
 </navigation>
