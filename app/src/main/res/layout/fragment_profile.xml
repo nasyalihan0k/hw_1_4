@@ -25,6 +25,7 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
+        android:id="@+id/etName"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="Text"

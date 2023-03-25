@@ -45,7 +45,7 @@ class HomeFragment : Fragment() {
             adapter.addTask(result)
         }
 
-
+        binding. recyclerView.adapter = adapter
         binding.tab.setOnClickListener {
               findNavController().navigate(R.id.taskFragment)
         }
