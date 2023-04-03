@@ -17,6 +17,7 @@ import com.geektech.hw_1_4.ubis.loadImage
 
 class ProfileFragment : Fragment() {
 
+
     private lateinit var binding: FragmentProfileBinding
     private lateinit var pref: Pref
     private val launcher = registerForActivityResult<Intent, Instrumentation.ActivityResult>(
