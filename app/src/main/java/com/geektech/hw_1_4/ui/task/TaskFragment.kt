@@ -1,5 +1,6 @@
 package com.geektech.hw_1_4.ui.task
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +26,7 @@ class TaskFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnSave.setOnClickListener {

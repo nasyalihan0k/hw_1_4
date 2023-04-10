@@ -1,5 +1,6 @@
 package com.geektech.hw_1_4.ui.home.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView.Adapter
@@ -12,7 +13,7 @@ class TaskAdapter(private val onLongClick: (Task) -> Unit) : Adapter<TaskAdapter
 
 
     private val data: ArrayList<Task> = arrayListOf()
-
+    private var color = true
 
     fun addTask(task: Task) {
         data.add(0, task)
@@ -53,12 +54,23 @@ class TaskAdapter(private val onLongClick: (Task) -> Unit) : Adapter<TaskAdapter
                 onLongClick(task)
                 false
             }
-
+            if (color) {
+                binding.itemTask.setBackgroundColor(Color.BLACK)
+                binding.tvDesc.setTextColor(Color.WHITE)
+                binding.tvTitle.setTextColor(Color.WHITE)
+                color = false
+            } else {
+                binding.itemTask.setBackgroundColor(Color.WHITE)
+                binding.tvDesc.setTextColor(Color.BLACK)
+                binding.tvTitle.setTextColor(Color.BLACK)
+                color = true
+            }
         }
 
     }
 
 }
+
 
 
 

@@ -20,9 +20,9 @@ class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
     private lateinit var pref: Pref
-    private val launcher = registerForActivityResult<Intent, Instrumentation.ActivityResult>(
+        private val launcher = registerForActivityResult<Intent, Instrumentation.ActivityResult>(
         ActivityResultContracts.StartActivityForResult()
-    ) { result: Instrumentation.ActivityResult ->
+    ) { result:Instrumentation.ActivityResult ->
         if (result.resultCode == Activity.RESULT_OK
             && result.data != null
         ) {
